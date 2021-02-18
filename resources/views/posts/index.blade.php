@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
 @section('title')
-Blog
+Posts
 @endsection
 
 @section('content')
-<h1>Blog</h1>
+<h1>Posts</h1>
+<a href="{{route('posts.create')}}">create a new post</a>
+
 @foreach($posts as $post)
 
 <h2>{{ $post->title }}</h2>
