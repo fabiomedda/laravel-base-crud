@@ -5,6 +5,7 @@ Create post
 @endsection
 
 @section('content')
+
 <h1>Create post</h1>
 <form action="{{ route('posts.store') }}" method="post">
     @csrf
